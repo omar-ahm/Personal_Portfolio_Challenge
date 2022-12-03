@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100;300&display=swap'); 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 .main-header {
     background:#000;
@@ -13,6 +14,10 @@
 a {
     text-decoration: none;
     color: #fff;
+}
+span {
+    font-size: 48px;
+    color: aquamarine;
 }
 
 .main-nav ul {
@@ -48,7 +53,8 @@ a {
 .main-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 200px;
+    grid-template-rows: 600px 100px;
+    padding-bottom: 300px;
 }
 .col-1 {
     display: flex;
@@ -105,7 +111,7 @@ a {
 /* About Section */
 .about-section {
     padding: 10px 10px;
-    background: grey;
+    background: #000;
     color: #fff;
 }
 
@@ -116,7 +122,7 @@ a {
 }
 
 .about-container h1 {
-    font-size: 100px;
+    font-size: 80px;
     color: #fff;
     margin-bottom: 32px;
     padding: 10px 30px;
@@ -136,8 +142,7 @@ a {
     border: #000 solid 1px;
 }
 .about-img {
-    width: 205px;
-    height: 205px;
+    width: 290px;
     border-radius: 100%;
     border: #000 solid 1px;
 }
@@ -145,13 +150,14 @@ a {
     padding: 10px 20px;
     border: #000 solid 1px;
 }
-.about-text h2 {
-    font-size: 48px;
+/* .about-text h2 {
+    font-size: 40px;
     line-height: 1.1;
     margin-bottom: 50px;
-}
+} */
 .about-text p {
-    line-height: 1.8;
+    line-height: 1.5;
+    margin-right: 100px;
 }
 
 /* Work Section */
@@ -172,12 +178,11 @@ a {
 }
 
 .work-container h1 {
-    font-size: 48px;
+    font-size: 32px;
     color: #fff;
     margin-bottom: 32px;
     padding: 10px 30px;
     background-color: rgba(100,100,100,0.7);
-    padding: 15px;
     color: white;
     border-bottom: 5px solid aquamarine;
 
@@ -226,44 +231,59 @@ a {
 
 /* FEATURED PROJECTS */
 
-  
+/*   
   #featuredProduct {
     grid-area: featuredProduct;
-    background-image: url("./images/laptop.jpg");
-  }
+    background-image: url("/assets/images/laptop.jpg");
+  } */
   
-
-  .project-section {
+    /* category grid */
+    #project-section {
+        margin: 0px 5%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 250px;
-        margin: 20px;
-    }
-    .project-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        align-items: flex-start;
-        border: #fff solid 1px;
-    }
-    .project-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        align-items: flex-start;
-        border: #fff solid 1px;
-    }
-    .project-3 {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        align-items: flex-start;
-        border: #fff solid 1px;
-    }
-    .project-2-img, .project-1-img, .project-3-img {
-        width: 100%;
-        height: 100%;
-    }
+        grid-template-rows: 80px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "project-1"
+        "project-2"
+        "project-3";
+      }
+      
+      #project-1 {
+        grid-area: project-1;
+        background-image: url("/assets/images/laptop.jpg");
+      
+      }
+      #project-2 {
+        grid-area: project-2;
+        background-image: url("/assets/images/laptop.jpg");
+      }
+      
+      #project-3 {
+        grid-area: project-3;
+        background-image: url("/assets/images/laptop.jpg");
+      }
+      
+      /* category grid area */
+    .project-grid {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 5px;
+        cursor: pointer;
+        display: grid;
+        align-content: end;
+      }
+
+      /* heading */
+    .proj-heading {
+        background-color: rgba(0,0,0,0.7);
+        padding: 15px;
+        height: 25px;
+        color: white;
+        font-size: 18px;
+        border-bottom: 5px solid goldenrod;
+      }
 
  
 
