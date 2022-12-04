@@ -4,9 +4,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Flex', sans-serif;
-}
-.main-header {
     background:#000;
+    color: #fff;
+}
+html {
+    scroll-behavior:smooth;
+}
+
+.main-header {
+    
     padding: 0 40px;
     color: #fff;
     /* border: #fff solid 1px; */
@@ -63,8 +69,6 @@ span {
     flex-direction: column;
     justify-content:space-evenly;
     align-items: flex-start;
-    /* border: #fff solid 1px; */
-
 }
 .col-1 h1 {
     font-size: 75px;
@@ -99,14 +103,18 @@ span {
     .col-1 h1 {
         font-size: 65px;
     }
+    /* .col-1 p {
+
+    } */
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 480px / 319px) {
     .main-wrapper {
         grid-template-columns: 600px;
     }
     .col-1 h1 {
         font-size: 20px;
     }
+    
 }
 /* About Section */
 .about-section {
@@ -182,13 +190,6 @@ span {
     }
 }
 
-/* .about-text h2 {
-    font-size: 40px;
-    line-height: 1.1;
-    margin-bottom: 50px;
-} */
-
-
 /* Work Section */
 .work-section {
     padding: 50px 50px;
@@ -213,6 +214,9 @@ span {
     grid-template-columns: 1fr;
     grid-template-rows: 600px;
 }
+
+/* FEATURED PROJECT */
+
 .featured-project {
     display: block;
     justify-content: space-evenly;
@@ -239,18 +243,8 @@ span {
         border: #fff solid 1px; 
 }
 @media screen and (max-width:1000px) {
-    .project-section {
-        padding: 30px;
-    }
-    .project-section {
+    .work-section {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .project-grid {
-        margin-top: 30px;
-    }
-    .about-container h1 {
-        font-size: 55px;
     }
 }
 
@@ -258,46 +252,46 @@ span {
     .about-text h2 {
         font-size: 18px;
     }
+    .col-1 p {
+        font-size: 20px;
+    }
     .project-grid {
         width: 100%;
         height: 100%;
     }
+    .work-section {
+        padding: 20px;
+    }
 }
 
-
-/* FEATURED PROJECTS */
-
-/*   
-  #featuredProduct {
-    grid-area: featuredProduct;
-    background-image: url("/assets/images/laptop.jpg");
-  } */
-  
     /* category grid */
     #project-section {
         display: grid;
+        gap: .5em;
+        margin-bottom: 50px;
+        grid-template-rows: 300px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 400px;
-        gap: 20px;
-        padding: 20px 0;
+       grid-template-areas: 
+        "project-1 project-2 project-3";
     } 
-      
+    /* #project-section div {
+        height:max-content;
+    } */
       #project-1 {
-       grid-column: 1;
-        background-image: url("/assets/images/laptop2.jpg");
-      }
+        grid-area: project-1;
+        background-image: url(/assets/images/Background\ image.jpg);
+    }
       #project-2 {
-        grid-column: 2;
-        background-image: url("/assets/images/laptop2.jpg");
-      }
-      
+        grid-area: project-2;
+        background-image: url(/assets/images/Background\ image.jpg);
+    }
       #project-3 {
-        grid-column: 3;
-        background-image: url("/assets/images/laptop2.jpg");
-      }
+        grid-area: project-3;
+        background-image: url(/assets/images/Background\ image.jpg);
+    }
       
       /* category grid area */
-    .project-grid {
+      .project-grid {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -305,27 +299,34 @@ span {
         cursor: pointer;
         display: grid;
         align-content: end;
-        /* border-radius: 40px 40px 0 0; */
-        border: aquamarine dashed 2px;
-      }
+        border: aquamarine dashed 1px;
+    }
+    
+    .proj-heading  {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border: aquamarine dashed 2px;
+  }
 
-      /* heading */
-    .proj-heading {
-        background-color: rgba(255,255,255,0.7);
-        padding: 15px;
-        height: 25px;
-        color: #000;
-        font-size: 18px;
-        font-weight:bolder;
-        border-bottom: 10px solid rgb(127, 255, 212);
+  @media only screen and (max-width:600px) {
+    
+    .main-nav ul li a {
+        font-size: 12px;
+    }
+    #project#project-grid  {
+        grid-template-rows: 450px 450px 450px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "project-1"
+        "project-2"
+        "project 3";
       }
       .proj-heading {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-top: 50px;
-        cursor: pointer;
-        display: grid;
-        align-content: end;
+        font-size:12px ;
       }
+  }
 
+    
