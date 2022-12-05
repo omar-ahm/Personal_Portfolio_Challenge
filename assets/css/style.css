@@ -192,7 +192,7 @@ span {
 
 /* Work Section */
 .work-section {
-    padding: 50px 50px;
+    padding: 10px 50px;
     background: #000;
     color: #fff;
 }
@@ -218,30 +218,26 @@ span {
 /* FEATURED PROJECT */
 
 .featured-project {
-    display: block;
+    display: grid;
     justify-content: space-evenly;
-    align-items:flex-start;
-    border: aquamarine dashed 2px;
+    align-items:center;
 }
 .featured-img  {
     width: 100%;
     height: 100%;
+    border: aquamarine dashed 2px;
 }
 .work-text {
-    padding: 20px 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+    border: aquamarine dashed 1px;
 }
 .work-text h2 {
     font-size: 32px;
     line-height: 1.1;
-    margin-bottom: 25px;
-        /* Placeholder border */
-    border: #fff solid 1px; 
+    margin: 25px 0px;
 }
-.work-text p {
-    line-height: 1.8;
-        /* Placeholder border */
-        border: #fff solid 1px; 
-}
+
 @media screen and (max-width:1000px) {
     .work-section {
         grid-template-columns: 1fr;
@@ -269,7 +265,7 @@ span {
         display: grid;
         gap: .5em;
         margin-bottom: 50px;
-        padding: 50px;
+        padding: 30px;
         grid-template-rows: 300px;
         grid-template-columns: 1fr 1fr 1fr;
        grid-template-areas: 
@@ -280,7 +276,7 @@ span {
     } */
       #project-1 {
         grid-area: project-1;
-        background-image: url(/assets/images/Background\ image.jpg);
+        background-image: url(/assets/images/Pre-work\ study\ Guide\ screenshot.png);
     }
       #project-2 {
         grid-area: project-2;
@@ -312,31 +308,13 @@ span {
     border: aquamarine dashed 2px;
   }
 
-  @media only screen and (max-width:600px) {
-    
-    .main-nav ul li a {
-        font-size: 12px;
-    }
-    #project#project-grid  {
-        grid-template-rows: 450px 450px 450px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "project-1"
-        "project-2"
-        "project 3";
-      }
-      .proj-heading {
-        font-size:12px ;
-      }
-  }
-
+  /* contact section */
   .contact-section {
-    margin-bottom: 50px;
-    padding: 50px;
+    padding: 50px 50px;
     background: #000;
     color: #fff;
 }
-  .contact-container {
+.contact-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -347,33 +325,90 @@ span {
     color: #fff;
     margin-bottom: 32px;
 }
-.contact-project {
-    display: inline-block;
-    justify-content: space-evenly;
-    align-items:flex-start;
-    border: aquamarine dashed 2px;
-}
-.contact-text h2 {
-    font-size: 32px;
-    line-height: 1.1;
-    margin-bottom: 25px;
-        /* Placeholder border */
-    border: #fff solid 1px; 
-}
-.contact-text p {
-    line-height: 1.8;
-        /* Placeholder border */
-        border: #fff solid 1px; 
-}
-.contact-text {
+.contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:210px;
-    padding:10px
+    grid-template-rows: 210px;
+    grid-gap: 20px;
+    border: aquamarine dashed 1px;
+}
+.contact-text {
+    padding-right: 20px;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
 }
 .social-img {
     width: 300px;
     height: 210px;
-    margin:0;
-    padding: 0;
+    border-radius: 100%;
+    /* background-position: cover; */
+}
+.contact-image a {
+    width: 300px;
+    height: 5px;
+
+}
+
+/* Footer */
+footer {
+    position: relative;
+    padding: 55px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer ul li {
+    margin-right: 30px;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 2.5;
+    list-style: none;
+}
+
+footer ul li a {
+    color: #fff;
+    transition: color 0.6s;
+}
+
+footer ul li a:hover {
+    color: #aaa;
+}
+
+
+/* media queries ABOUT section */
+@media screen and (max-width:1000px) {
+    .contact-section {
+        padding: 30px;
+    }
+    .contact-content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(300px, auto);
+    }
+    .contact-image {
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:480px) {
+    
+    .contact-img {
+        width: 100%;
+        height: 100%;
+    }
+    /* footer ul li:first-child {
+        position:absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+    footer ul li {
+        margin-right: 15px;
+    }
 }
