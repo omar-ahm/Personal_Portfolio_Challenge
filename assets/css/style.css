@@ -273,15 +273,15 @@ span {
     } 
       #project-1 {
         grid-area: project-1;
-        background-image: url(/assets/images/Pre-work\ study\ Guide\ screenshot.png);
+        background-image: url(/assets/images/Pre-work-study-Guide-screenshot.png);
     }
       #project-2 {
         grid-area: project-2;
-        background-image: url(/assets/images/blockchain\ nft\ image.png);
+        background-image: url(/assets/images/blockchain-nft-image.png);
     }
       #project-3 {
         grid-area: project-3;
-        background-image: url(/assets/images/a.i\ image.jpg);
+        background-image: url(/assets/images/ai-image.jpg);
     }
       
       /* category grid area */
