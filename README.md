@@ -28,11 +28,6 @@ Acceptance criteria:
 
 - When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 ## Thought Process
 
 ## Initial Wireframe Design
