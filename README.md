@@ -40,11 +40,11 @@ Check out my initial layout below
 
 Screenshot 1:
 
-![Alt text](assets/images/Screenshot%201.jpg)
+![Alt text](./assets/images/Screenshot1.jpg)
 
 Screenshot 2:
 
-![Alt text](assets/images/Screenshot%202.jpg)
+![Alt text](./assets/images/Screenshot2.jpg)
 
 ## Resources
 
