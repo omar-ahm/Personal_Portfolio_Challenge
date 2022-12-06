@@ -338,8 +338,7 @@ span {
     justify-content: space-between;
 }
 .social-img {
-    width: 295px;
-    height: 210px;
+    width: 100%;
     
 }
 .contact-image a {
