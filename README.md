@@ -29,7 +29,16 @@ Acceptance criteria:
 - When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
 ## Thought Process
+ 
+ I wanted to create a clean and simple layout with advanced functionality to navigate my site as it will be built on over the course of the bootcamp.
 
+I want to incorporate unique design elements and a standout factor to attract potential future clients.
+
+My interest in design has been a contributing factor on how I see layouts and what I want my work to present.
+
+Improvements I will look to make would be to add a hamburger menu when viewed in a small screen size and incorporate icons and additional advanced features.
+
+As I have not yet been introduced to bootstrap and icons in my contact section I substituted this for a way to display an image which links to my contact info.
 ## Initial Wireframe Design
 
 I created my wireframe design using Procreate on Ipad Pro.
@@ -45,20 +54,6 @@ Screenshot 1:
 Screenshot 2:
 
 ![Alt text](./assets/images/Screenshot2.jpg)
-
-## Resources
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-// List any links to resources or credits 
 
 ## License
 
