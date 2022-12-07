@@ -10,6 +10,10 @@
 - [Credits](#Credits)
 - [License](#License)
 
+## Deployed site 
+
+![Alt text](./assets/images/final%20screenshot.png)
+
 ## Project objective
 - The challenge is to create a personal portfolio page that you can update throughout the bootcamp with skills and details you learn as you progress through the modules.
 ## Description
