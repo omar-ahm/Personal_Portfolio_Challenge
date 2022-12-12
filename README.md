@@ -12,6 +12,8 @@
 
 ## Deployed site 
 
+Link to deployed site : https://omar-ahm.github.io/Personal_Portfolio_Challenge/
+
 ![Alt text](./assets/images/final%20screenshot.png)
 
 ## Project objective
